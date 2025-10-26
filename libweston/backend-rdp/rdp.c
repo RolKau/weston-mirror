@@ -1031,6 +1031,7 @@ convert_rdp_keyboard_to_xkb_rule_names(
 		if (rdp_keyboards[i].rdpLayoutCode == KeyboardLayout) {
 			xkbRuleNames->layout = rdp_keyboards[i].xkbLayout;
 			xkbRuleNames->variant = rdp_keyboards[i].xkbVariant;
+			xkbRuleNames->options = rdp_keyboards[i].xkbOptions;
 			break;
 		}
 	}
